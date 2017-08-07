@@ -1,0 +1,76 @@
+[
+	{
+		"name": "流程管理",
+		"url" :"#",
+		"level":1,
+		"icon":"menu-icon fa fa-desktop",
+		"children":[
+			{
+				"name": "流程模板管理",
+				"url" :"go_processTemplatePage.action",
+				"level":3,
+				"icon":"menu-icon fa fa-newspaper-o",
+				"children":[]
+			},
+			{
+				"name": "流程实例管理",
+				"url" :"go_processInstancePage.action",
+				"level":3,
+				"icon":"menu-icon fa fa-folder-o",
+				"children":[]
+			},
+			{
+				"name": "三级菜单测试",
+				"url" :"sysOrg-goPage.do",
+				"level":3,
+				"icon":"menu-icon fa fa-caret-right",
+				"children":[
+					{"name": "三级菜单测试",
+						"url" :"sysOrg-goPage.do",
+						"level":3,
+						"icon":"menu-icon fa fa-newspaper-o",
+						"children":[
+
+						]}
+				]
+			}
+		]
+	},
+	{
+		"name": "任务管理",
+		"url" :"#",
+		"level":1,
+		"icon":"menu-icon fa fa-tasks",
+		"children":[
+			{
+				"name": "任务实例管理",
+				"url" :"goTaskInstancePage.action",
+				"level":2,
+				"icon":"menu-icon glyphicon glyphicon-globe",
+				"children":[]
+			}
+		]
+	},
+	{
+		"name": "系统管理",
+		"url" :"#",
+		"level":1,
+		"icon":"menu-icon fa fa-cogs",
+		"children":[
+			{
+				"name": "接入系统管理",
+				"url" :"sysOrg-goPage.do",
+				"level":3,
+				"icon":"menu-icon fa fa-flag  ",
+				"children":[]
+			},
+			{
+				"name": "平台系统管理",
+				"url" :"sysOrg-goPage.do",
+				"level":3,
+				"icon":"menu-icon fa fa-cog  ",
+				"children":[]
+			}
+		]
+	}
+]

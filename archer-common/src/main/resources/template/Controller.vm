@@ -1,0 +1,25 @@
+package ${package_name};
+
+import ${servicePackage}.${module}Service;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+/**
+ * ${module}模块 controller
+ * Created by ${author} on ${createtime}.
+ */
+@Controller
+@RequestMapping("/${module}")
+public class ${module}Controller{
+
+    private static Logger logger = LoggerFactory.getLogger(${module}Controller.class);
+
+    @Autowired
+    private ${module}Service ${model}Service;
+
+}

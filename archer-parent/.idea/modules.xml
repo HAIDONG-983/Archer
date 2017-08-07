@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../archer-app/archer-app.iml" filepath="$PROJECT_DIR$/../archer-app/archer-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../archer-common/archer-common.iml" filepath="$PROJECT_DIR$/../archer-common/archer-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/archer-parent.iml" filepath="$PROJECT_DIR$/archer-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../archer-wfms/archer-wfms.iml" filepath="$PROJECT_DIR$/../archer-wfms/archer-wfms.iml" />
+    </modules>
+  </component>
+</project>

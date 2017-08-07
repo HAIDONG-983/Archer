@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="archer-wfms:war">
+    <output-path>$PROJECT_DIR$/../archer-wfms/target</output-path>
+    <root id="archive" name="archer-wfms.war">
+      <element id="artifact" artifact-name="archer-wfms:war exploded" />
+    </root>
+  </artifact>
+</component>

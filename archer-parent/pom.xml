@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.ylink</groupId>
+    <artifactId>archer-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <!-- 常量定义-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <developer.organization><![CDATA[xy公司]]></developer.organization>
+
+        <spring.version>4.2.5.RELEASE</spring.version>
+        <activiti.version>5.21.0</activiti.version>
+        <jackson-version>2.7.4</jackson-version>
+        <apache.commons.fileuplod.version>1.3.1</apache.commons.fileuplod.version>
+        <cxf.version>3.1.12</cxf.version>
+    </properties>
+
+
+
+
+    <modules>
+        <module>../archer-app</module>
+        <module>../archer-common</module>
+        <module>../archer-wfms</module>
+    </modules>
+
+
+</project>

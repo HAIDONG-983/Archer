@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+
+    <properties resource="generator.properties"></properties>
+
+    <context id="mysql-context" targetRuntime="MyBatis3" >
+        <property name="service_package" value="${generator.service_package}"></property>
+        <property name="module_name" value="${generator.module}"></property>
+        <property name="author_name" value="${generator.author}"></property>
+        <property name="controller_package" value="${generator.controller_package}"></property>
+
+        <!--分页插件-->
+        <!--<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin>-->
+
+        <plugin type="org.archer.common.mybatis.generator.plugin.GeneratorServicePlugin"></plugin>
+
+        <commentGenerator type="org.archer.common.mybatis.generator.ArcherCommentGenerator">
+            <property name="suppressDate" value="false" /> <!-- 是否生成注释代时间戳-->
+        </commentGenerator>
+
+
+
+        <!-- 数据库链接URL、用户名、密码 -->
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
+                        <!--connectionURL="jdbc:mysql://localhost:3306/test?characterEncoding=utf8"-->
+                        <!--userId="root"-->
+                        <!--password="root">-->
+
+        <jdbcConnection
+                driverClass="${generator.driverClass}"
+                connectionURL="${generator.connectionURL}"
+                userId="${generator.userId}"
+                password="${generator.password}">
+            <!-- 针对oracle数据库 -->
+            <property name="remarksReporting" value="true"></property>
+        </jdbcConnection>
+
+        <javaTypeResolver type="org.archer.common.mybatis.generator.ArcherJavaTypeResolver">
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- 生成模型的包名和位置 -->
+        <javaModelGenerator targetPackage="${generator.entity_package}"
+                            targetProject="${generator.targetProject}">
+            <property name="enableSubPackages" value="false" />
+            <property name="trimStrings" value="false" />
+        </javaModelGenerator>
+
+        <!-- 生成的映射文件包名和位置 -->
+        <sqlMapGenerator targetPackage="${generator.mapper_package}"
+                         targetProject="${generator.targetProject}">
+            <property name="enableSubPackages" value="false" />
+        </sqlMapGenerator>
+
+        <!-- 生成DAO的包名和位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="${generator.dao_package}"
+                             targetProject="${generator.targetProject}">
+            <property name="enableSubPackages" value="false" />
+            <property name="rootInterface" value="org.archer.common.mybatis.mapper.BaseMapper"></property>
+        </javaClientGenerator>
+
+        <!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
+        <table schema="WFMS"
+               tableName="${generator.table}"
+               domainObjectName="${generator.module}"
+               enableCountByExample="true"
+               enableUpdateByExample="true"
+               enableDeleteByExample="true"
+               enableSelectByExample="true"
+               selectByExampleQueryId="true" >
+            <generatedKey column="ID" sqlStatement="${generator.id}" identity="false"></generatedKey>
+        </table>
+
+    </context>
+</generatorConfiguration>

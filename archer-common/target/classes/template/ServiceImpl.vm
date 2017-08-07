@@ -1,0 +1,28 @@
+package ${package_name};
+
+import ${servicePackage}.${module}Service;
+import ${entityPackage}.${module};
+import ${entityPackage}.${module}Example;
+
+import org.archer.common.mybatis.service.AbstractBaseService;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+/**
+* ${module}模块 Service实现
+* Created by ${author} on ${createtime}.
+*/
+@Service
+@Transactional
+public class ${module}ServiceImpl  extends AbstractBaseService<${module},${module}Example> implements ${module}Service {
+
+    private static Logger logger = LoggerFactory.getLogger(${module}ServiceImpl.class);
+
+
+
+
+}
