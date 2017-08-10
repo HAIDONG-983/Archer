@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dc1e3b0-9a80-42e6-8df0-e412f092f611" name="Default" comment="表格插件增加formatter类型为button的配置">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js" />
+    <list default="true" id="4dc1e3b0-9a80-42e6-8df0-e412f092f611" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/common/common.jsp" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/common/common.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-instance.jsp" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-instance.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/wfms-index.jsp" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/wfms-index.jsp" />
     </list>
     <ignored path="archer-parent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1364,12 +1358,20 @@
       <workItem from="1502098847832" duration="3440000" />
       <workItem from="1502152723258" duration="687000" />
       <workItem from="1502240779323" duration="1321000" />
-      <workItem from="1502277415601" duration="8940000" />
+      <workItem from="1502277415601" duration="9036000" />
     </task>
+    <task id="LOCAL-00001" summary="表格插件增加formatter类型为button的配置">
+      <created>1502346937822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1502346937822</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316927000" />
+    <option name="totallyTimeSpent" value="317023000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
