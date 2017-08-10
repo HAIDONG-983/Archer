@@ -185,16 +185,12 @@ public class ProcessTemplateHandler extends BaseHandler{
             String mainProcessId = bpmnModel.getMainProcess().getId();
 
             if (type.equals("bpmn")) {
-
                 BpmnXMLConverter xmlConverter = new BpmnXMLConverter();
                 exportBytes = xmlConverter.convertToXML(bpmnModel);
-
                 filename = mainProcessId + ".bpmn20.xml";
             } else if (type.equals("json")) {
-
                 exportBytes = modelEditorSource;
                 filename = mainProcessId + ".json";
-
             }
             ByteArrayInputStream in = new ByteArrayInputStream(exportBytes);
             IOUtils.copy(in, response.getOutputStream());

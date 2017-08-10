@@ -137,7 +137,6 @@
         if (Object.getOwnPropertyNames(rowData).length ==0){layer.alert("请选择记录!"); return;}
         var processDefinitionId = rowData.processDefinitionId;
         var processInstanceID =  rowData.processInstanceId;
-        alert(processDefinitionId+" "+ processInstanceID);
         layer.open({
             type: 2,
             title: '流程跟踪',

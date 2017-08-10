@@ -159,7 +159,9 @@ $.extend($.jgrid,{
 
 					}
 				});
-			} 
+			} else {
+
+			}
 			
 //			var array=EnumConstants[$(this).attr("data-enum")];
 //			if(array){

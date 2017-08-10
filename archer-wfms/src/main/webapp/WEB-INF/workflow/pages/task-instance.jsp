@@ -12,23 +12,23 @@
         <div class="col-xs-12">
                 <div class="widget-box widget-color-green2">
                     <div class="widget-header">
-                        <h4 class="widget-title lighter smaller">流程实例信息查询</h4>
+                        <h4 class="widget-title lighter smaller">任务信息查询</h4>
                     </div>
                     <div class="widget-body" >
                         <div class="widget-main ">
                             <form id="frm" class="form-group">
                                 <div class ="row">
                                     <div class="col-xs-3">
-                                        <label>流程实例ID</label>
+                                        <label>任务实例ID</label>
                                         <input type="text" name="ProcessInstanceVo.processInstanceId"/>
                                     </div>
                                     <div class="col-xs-3">
-                                        <label>流程名称</label>
+                                        <label>任务名称</label>
                                         <input type="text" name="ProcessInstanceVo.processDefinitionName"/>
                                     </div>
                                     <div class="col-xs-3">
                                         <label>接入系统名称</label>
-                                        <select name="category" data-url="sysImgRights_Category"></select>
+                                        <select name="category" data-url="sysImgRights_Category.action"></select>
                                     </div>
                                     <%--TO-DO 日期控件未解决--%>
                                     <%--<div class="col-xs-4"> --%>
@@ -86,9 +86,28 @@
                 {name:'createTime'},
                 {name:'endTime'},
                 {name:'options',
-                    formatter:function (cellvalue, options, rowObject) {
-                        return "<button class='btn btn-sm btn-primary' onclick='traceProcess("+rowObject.processInstanceId+");'><i class='glyphicon glyphicon-play-circle '></i>查看流程变量</button>";
-                    }
+                    width:200,
+                    formatter:"button",
+                    formatoptions:{ buttonOptions:[
+                        {   text:"查看流程变量",
+                            class:"btn btn-sm btn-primary",
+                            icon:"glyphicon glyphicon-play-circle ",
+                            callback:function (rowObject) {
+                                alert(JSON.stringify(rowObject));
+                            }
+                        },
+                        {   text:"签收",
+                            class:"btn btn-sm btn-success",
+                            icon:"glyphicon glyphicon-play-circle ",
+                            callback:function (rowObject) {
+                                alert(JSON.stringify(rowObject));
+                            }
+                        }
+                    ]}
+
+//                    formatter:function (cellvalue, options, rowObject) {
+//                        return "<button class='btn btn-sm btn-primary' onclick='traceProcess("+rowObject.processInstanceId+");'><i class='glyphicon glyphicon-play-circle '></i>查看流程变量</button>";
+//                    }
 //                    formatter:'actions',
 //                    formatoptions:{ custome:true,
 //                                    customeOptions:[

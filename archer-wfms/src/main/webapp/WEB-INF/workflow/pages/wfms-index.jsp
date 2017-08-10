@@ -368,7 +368,7 @@
             <li class="">
                 <a href="index.html">
                     <i class="menu-icon fa fa-tachometer"></i>
-                    <span class="menu-text"> 影像平台 </span>
+                    <span class="menu-text"> 流程平台</span>
                 </a>
 
                 <b class="arrow"></b>
