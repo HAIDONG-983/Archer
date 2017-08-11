@@ -5,7 +5,7 @@
 		var array=this.serializeArray();
 		$.each(array,function(i,n){//表单中的每一个input，select
 			var name = n.name;
-			var value = n.value;
+			var value = n.value==""?null:n.value;
 			var nameArray=name.split(".");
 			checkState(nameArray,o,value);
 		});

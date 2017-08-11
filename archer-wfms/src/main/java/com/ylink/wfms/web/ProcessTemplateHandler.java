@@ -28,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
@@ -35,6 +36,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -200,5 +202,25 @@ public class ProcessTemplateHandler extends BaseHandler{
             logger.error("导出model的xml文件失败:",e);
         }
     }
+
+
+
+
+    @RequestMapping("showXML.action")
+    public ModelAndView showXML(String templateId) throws Exception {
+        ModelAndView mav = new ModelAndView("workflow/pages/process-template-xml");
+        Model modelData = repositoryService.getModel(templateId);
+        ObjectNode modelNode =null;
+        modelNode = (ObjectNode) new ObjectMapper().readTree(repositoryService.getModelEditorSource(modelData.getId()));
+        byte[] bpmnBytes = null;
+        BpmnModel model = new BpmnJsonConverter().convertToBpmnModel(modelNode);
+        bpmnBytes = new BpmnXMLConverter().convertToXML(model);
+        String xmlContent = new String(bpmnBytes,"UTF-8");
+        String replaceAll = xmlContent.replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+        mav.addObject("xmlResource", replaceAll);
+        return mav;
+    }
+
+
 
 }

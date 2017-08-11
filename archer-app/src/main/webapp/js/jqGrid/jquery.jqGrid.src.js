@@ -6970,15 +6970,16 @@ var xmlJsonClass = {
 
     $.fn.fmatter.button = function (cellval, opts,rwd) {
         var bos=opts.colModel.formatoptions.buttonOptions;
-        var button = "<button id='btn_"+rwd.id+"' style='margin-right: 2px'></button>"
+        var button = "<button  style='margin-right: 2px'></button>"
         var str="";
 
         $.each(bos,function (i,ele) {
             var $button=$(button);
+            $button.attr("id","btn_"+i+"_"+rwd.id);
             if(ele.class){$button.addClass(ele.class);}else {$button.addClass("btn btn-sm btn-primary");}
             if(ele.icon){$button.append("<i></i>").children("i").addClass(ele.icon);}
             if(ele.text){$button.html($button.html()+ele.text);}
-            $(document).on('click',"#btn_"+rwd.id,function(){
+            $(document).on('click',"#btn_"+i+"_"+rwd.id,function(){
                 ele.callback.call(this,rwd);
             });
             str+=$button[0].outerHTML;

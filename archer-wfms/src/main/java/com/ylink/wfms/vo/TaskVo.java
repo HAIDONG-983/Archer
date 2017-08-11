@@ -13,6 +13,7 @@ public class TaskVo extends PageInfo{
     private String description;
     private Integer priority;
     private String processInstanceId;
+    private String processName;
     private String assignee;
     private Date createTime;
     private Date endTime;
@@ -89,5 +90,13 @@ public class TaskVo extends PageInfo{
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getProcessName() {
+        return processName;
+    }
+
+    public void setProcessName(String processName) {
+        this.processName = processName;
     }
 }

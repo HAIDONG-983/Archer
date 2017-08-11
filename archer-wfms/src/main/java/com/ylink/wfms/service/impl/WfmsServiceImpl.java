@@ -173,9 +173,20 @@ public class WfmsServiceImpl implements WfmsService {
 
     public List<TaskVo> queryTaskInstances(TaskVo taskVo) {
         //taskService.createTaskQuery().
-        List<HistoricTaskInstance> list = historyService.createHistoricTaskInstanceQuery().list();
+        List<HistoricTaskInstance> list = historyService.createHistoricTaskInstanceQuery()
+                .taskId(taskVo.getId())
+                .taskNameLike(taskVo.getName())
+                .list();
         //historyService
         return ConvertUtil.converToTaskInstances(list);
     }
+
+    public void completeTask(TaskVo taskVo){
+        taskService.complete(taskVo.getId(),null);
+    }
+
+
+
+
 }
 

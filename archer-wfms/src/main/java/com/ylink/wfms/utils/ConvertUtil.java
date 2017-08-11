@@ -4,7 +4,9 @@ import com.ylink.wfms.constant.WfmsEnum;
 import com.ylink.wfms.vo.ProcessInstanceVo;
 import com.ylink.wfms.vo.TaskVo;
 import com.ylink.wfms.vo.TemplateVo;
+import org.activiti.engine.HistoryService;
 import org.activiti.engine.RepositoryService;
+import org.activiti.engine.history.HistoricActivityInstanceQuery;
 import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.history.HistoricTaskInstance;
 import org.activiti.engine.repository.Deployment;
@@ -71,13 +73,21 @@ public class ConvertUtil implements ApplicationContextAware{
 
     public static List<TaskVo> converToTaskInstances(List<HistoricTaskInstance> taskInstances){
         List<TaskVo> taskVos =new ArrayList<TaskVo>(10);
+        HistoryService historyService = context.getBean(HistoryService.class);
         for (HistoricTaskInstance taskInstance:taskInstances) {
             TaskVo taskVo =new TaskVo();
             taskVo.setId(taskInstance.getId());
             taskVo.setName(taskInstance.getName());
             taskVo.setDescription(taskInstance.getDescription());
             taskVo.setCreateTime(taskInstance.getCreateTime());
+            taskVo.setEndTime(taskInstance.getEndTime());
             taskVo.setPriority(taskInstance.getPriority());
+
+            HistoricProcessInstance processInstance = historyService.createHistoricProcessInstanceQuery()
+                    .processInstanceId(taskInstance.getProcessInstanceId())
+                    .singleResult();
+
+            taskVo.setProcessName(processInstance.getProcessDefinitionName());
             taskVo.setProcessInstanceId(taskInstance.getProcessInstanceId());
             taskVos.add(taskVo);
 

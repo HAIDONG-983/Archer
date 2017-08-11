@@ -72,6 +72,9 @@
             <button class="btn btn-sm btn-success" onclick="showImg();"><i class="glyphicon  glyphicon-picture"></i>
                 查看流程图
             </button>
+            <button class="btn btn-sm btn-success" onclick="showXML();"><i class="glyphicon  glyphicon-picture"></i>
+                XML查看
+            </button>
             <button class="btn btn-sm btn-danger" onclick='deleteModel();'><i class="glyphicon  glyphicon-trash"></i>
                 删除
             </button>
@@ -262,10 +265,30 @@
     function startUp(templateId) {
         //alert(templateId);
         $.ajax("startupProcess.action",
-                {data: {"templateId":templateId},success:function (data) {
-           alert("流程启动成功");
-        }})
+                {data: {"templateId":templateId},
+                    success:function (data) {
+                        alert("流程启动成功");
+                    }
+                }
+        )
     }
+
+    function showXML(){
+        var templateId=$("#grid-table").jqGrid('getRowObject','templateId');
+        if (!templateId)  {layer.alert("请选择流程模板记录!");return;}
+        layer.open({
+            type: 2,
+            title: '流程XML资源展示',
+            shadeClose: true,
+            shade: 0.8,
+            skin: 'layui-layer-rim', //加上边框
+            area: ['90%', '90%'],
+            content: "showXML.action?templateId="+templateId //iframe的url
+        });
+    }
+
+
+
 
 </script>
 

@@ -101,4 +101,7 @@ public interface WfmsService<T> {
 
     List<TaskVo> queryTaskInstances(TaskVo taskVo);
 
+    void completeTask(TaskVo taskVo);
+
+
 }

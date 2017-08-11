@@ -133,27 +133,7 @@
       "description" : "分配任务给用户",
       "popular" : true
     } ]
-  }, {
-    "name" : "formpropertiespackage",
-    "properties" : [ {
-      "id" : "formproperties",
-      "type" : "Complex",
-      "title" : "表单属性",
-      "value" : "",
-      "description" : "定义表单属性",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "formkeydefinitionpackage",
-    "properties" : [ {
-      "id" : "formkeydefinition",
-      "type" : "String",
-      "title" : "表单编号",
-      "value" : "",
-      "description" : "用户任务表单编号.",
-      "popular" : true
-    } ]
-  }, {
+  },  {
     "name" : "duedatedefinitionpackage",
     "properties" : [ {
       "id" : "duedatedefinition",
@@ -291,16 +271,6 @@
       "title" : "至",
       "value" : "",
       "description" : "The recipients if the e-mail. Multiple recipients are defined in a comma-separated list.",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "mailtaskfrompackage",
-    "properties" : [ {
-      "id" : "mailtaskfrom",
-      "type" : "Text",
-      "title" : "表单",
-      "value" : "",
-      "description" : "The sender e-mail address. If not provided, the default configured from address is used.",
       "popular" : true
     } ]
   }, {

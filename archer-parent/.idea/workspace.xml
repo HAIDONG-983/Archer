@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc1e3b0-9a80-42e6-8df0-e412f092f611" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/css/github.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/highlight.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template-xml.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/main.js" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/utils/ConvertUtil.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/utils/ConvertUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/TaskVo.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/TaskVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/TaskInstanceHandler.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/TaskInstanceHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/resources/stencilset.json" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/resources/stencilset.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template.jsp" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp" />
     </list>
     <ignored path="archer-parent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,171 +43,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task-instance.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="task-instance.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+            <state relative-caret-position="208">
+              <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.jqGrid.src.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="6972" column="74" selection-start-line="6972" selection-start-column="74" selection-end-line="6972" selection-end-column="74" />
-              <folding>
-                <marker date="1502345888000" expanded="true" signature="14003:14015" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="14056:14066" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="14098:14122" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="120988:120998" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="121166:121184" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="122504:122546" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="122653:122669" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="125112:125123" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="125471:125511" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="147361:147373" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="153277:153306" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="153581:153592" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="154585:154614" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="158899:158928" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="168458:168534" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="251420:251479" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="254897:254966" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="256244:256265" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="256820:256861" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="263576:263599" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="266241:266263" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="281232:281298" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="281412:281514" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="327547:327573" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="327995:328021" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="328446:328473" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="329039:329066" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="329544:329567" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="329947:329987" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="330117:330133" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="330337:330354" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="330921:330939" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="347434:347525" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="347644:347766" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="347968:348090" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="378317:378363" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="380724:380740" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="381103:381116" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="411599:411612" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="415159:415189" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="415274:415284" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="415331:415342" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="438978:438990" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="468028:468095" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="469157:469169" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="469373:469385" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="470688:470698" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="470878:470890" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="476206:476218" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="476336:476348" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="476465:476477" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="476662:476694" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="476772:476780" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="493299:493311" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="496995:497062" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="497201:497219" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="509137:509204" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="509358:509370" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="509464:509476" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="509571:509587" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="510150:510160" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="525282:525311" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="525430:525440" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="536587:536627" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="540741:540751" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="604859:604903" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="604944:604965" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="614516:614531" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="625097:625112" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="626486:626501" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="631775:631804" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="687134:687149" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="688184:688220" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="688691:688727" placeholder="..." />
-                <marker date="1502345888000" expanded="true" signature="711097:711130" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractQuery.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/AbstractQuery.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state relative-caret-position="126">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelQueryImpl.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/ModelQueryImpl.java">
+      <file leaf-file-name="jquery1x.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/js/jquery1x.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+            <state relative-caret-position="211">
+              <caret line="9507" column="4" selection-start-line="9507" selection-start-column="4" selection-end-line="9507" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelEntityManager.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/persistence/entity/ModelEntityManager.java">
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/editor-app/libs/jquery_1.11.0/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
+            <state relative-caret-position="-198">
+              <caret line="7461" column="4" selection-start-line="7461" selection-start-column="4" selection-end-line="7461" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbSqlSession.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/db/DbSqlSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="442" column="41" selection-start-line="442" selection-start-column="41" selection-end-line="442" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SqlSession.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/mybatis/mybatis/3.4.4/mybatis-3.4.4.jar!/org/apache/ibatis/session/SqlSession.class">
+      <file leaf-file-name="TaskInstanceHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/TaskInstanceHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListQueryParameterObject.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/db/ListQueryParameterObject.java">
+      <file leaf-file-name="WfmsService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="392">
+              <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractManager.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/persistence/AbstractManager.java">
+      <file leaf-file-name="WfmsServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-              <folding>
-                <element signature="e#3074#3075#0" expanded="true" />
-                <element signature="e#3121#3122#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="249">
+              <caret line="173" column="53" selection-start-line="173" selection-start-column="53" selection-end-line="173" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HistoricTaskInstance.xml" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0.jar!/org/activiti/db/mapping/entity/HistoricTaskInstance.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3132">
+              <caret line="343" column="32" selection-start-line="343" selection-start-column="26" selection-end-line="343" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DispatcherServlet.java" pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8620">
+              <caret line="425" column="88" selection-start-line="425" selection-start-column="88" selection-end-line="425" selection-end-column="88" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,9 +140,9 @@
       <list>
         <option value="Enum" />
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -236,8 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/ProcessInstanceVo.java" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/spring-mvc-rest.xml" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/spring-mvc-modeler.xml" />
         <option value="$PROJECT_DIR$/../archer-app/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/editor-app/app-cfg.js" />
@@ -272,21 +205,23 @@
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/resources/generator.xml" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/resources/generator.properties" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/cfgSysRegistry/controller/CfgSysRegistryController.java" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/resources/stencilset.json" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/editor-app/i18n/en.json" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template.jsp" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/workflow/data/menu.json" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/wfms-index.jsp" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-instance.jsp" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/TaskInstanceHandler.java" />
+        <option value="$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/resources/stencilset.json" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/common/common.jsp" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template-xml.jsp" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template.jsp" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/TaskVo.java" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/utils/ConvertUtil.java" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/wfms-index.jsp" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/common/common.jsp" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java" />
-        <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-instance.jsp" />
-        <option value="$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js" />
+        <option value="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java" />
         <option value="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp" />
+        <option value="$PROJECT_DIR$/../archer-app/src/main/webapp/js/main.js" />
       </list>
     </option>
   </component>
@@ -379,7 +314,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -397,18 +332,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="archer-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -582,10 +505,6 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -701,12 +620,146 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="archer-wfms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wfms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="archer-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archer-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -740,25 +793,25 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ylink.wfms.webservice" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages" />
-      <recent name="$PROJECT_DIR$/../archer-common/src/main/resources" />
-      <recent name="$PROJECT_DIR$/../archer-wfms/src/main/java" />
-      <recent name="$PROJECT_DIR$/../archer-wfms/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/../archer-app/src/main/webapp/js" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.archer.common.utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/../archer-wfms/src/main/resources" />
       <recent name="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/generator" />
       <recent name="$PROJECT_DIR$/../archer-app/src/main/webapp/js/date-time-CN" />
       <recent name="$PROJECT_DIR$/../archer-app/src/main/webapp/js" />
       <recent name="$PROJECT_DIR$/../archer-app/src/main/webapp/WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../archer-app/src/main/webapp/css" />
+      <recent name="$PROJECT_DIR$/../archer-app/src/main/webapp/js" />
+      <recent name="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages" />
+      <recent name="$PROJECT_DIR$/../archer-common/src/main/resources" />
+      <recent name="$PROJECT_DIR$/../archer-wfms/src/main/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.archer.common.utils" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ylink.wfms.webservice" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
@@ -1358,7 +1411,8 @@
       <workItem from="1502098847832" duration="3440000" />
       <workItem from="1502152723258" duration="687000" />
       <workItem from="1502240779323" duration="1321000" />
-      <workItem from="1502277415601" duration="9036000" />
+      <workItem from="1502277415601" duration="15377000" />
+      <workItem from="1502413120277" duration="7808000" />
     </task>
     <task id="LOCAL-00001" summary="表格插件增加formatter类型为button的配置">
       <created>1502346937822</created>
@@ -1371,7 +1425,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="317023000" />
+    <option name="totallyTimeSpent" value="331172000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1388,34 +1442,34 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36746988" sideWeight="0.49428788" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18313253" sideWeight="0.49428788" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4343949" sideWeight="0.50875854" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32546496" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3987952" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5228916" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40240964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3876967" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38554215" sideWeight="0.49124143" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52771086" sideWeight="0.49124143" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299363" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1431,11 +1485,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="表格插件增加formatter类型为button的配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="表格插件增加formatter类型为button的配置" />
+    <MESSAGE value="展示流程模型XML文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="展示流程模型XML文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="122" />
+      <option name="time" value="131" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1444,339 +1499,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/cfgSysRegistry/service/Impl/CfgSysRegistryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/cfgSysRegistry/service/CfgSysRegistryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/resources/generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/cfgSysRegistry/entity/CfgSysRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/resources/stencilset.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="805" column="3" selection-start-line="805" selection-start-column="3" selection-end-line="805" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/editor-app/i18n/en.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1953">
-          <caret line="178" column="41" selection-start-line="178" selection-start-column="38" selection-end-line="178" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/constant/WfmsEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/history/HistoricData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/history/HistoricTaskInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/task/TaskInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/task/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/ActionResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/workflow/data/menu.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/wfms-index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="406" column="10" selection-start-line="406" selection-start-column="10" selection-end-line="406" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/utils/ConvertUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="74" column="18" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/TaskVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="76" column="65" selection-start-line="76" selection-start-column="65" selection-end-line="76" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/TemplateVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/ProcessInstanceVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/diagram.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="56" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="46" column="46" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/resources/spring-datasource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/WEB-INF/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/common/common.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1158">
-          <caret line="161" column="20" selection-start-line="161" selection-start-column="20" selection-end-line="161" selection-end-column="20" />
-          <folding>
-            <marker date="1502161447000" expanded="true" signature="2141:2242" placeholder="..." />
-            <marker date="1502161447000" expanded="true" signature="2590:2693" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/cfgSysRegistry/controller/CfgSysRegistryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="248" column="42" selection-start-line="248" selection-start-column="42" selection-end-line="248" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/TaskInstanceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessInstanceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/resources/spring-wfms-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-instance.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="148" column="14" selection-start-line="148" selection-start-column="14" selection-end-line="148" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/repository/ModelQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/query/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/cfg/CommandExecutorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          <folding>
-            <element signature="e#1004#1005#0" expanded="false" />
-            <element signature="e#1052#1053#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/interceptor/CommandExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/persistence/AbstractManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
-          <folding>
-            <element signature="e#3074#3075#0" expanded="true" />
-            <element signature="e#3121#3122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/db/ListQueryParameterObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/AbstractQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1784,7 +1510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
           <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1792,7 +1517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="123" column="33" selection-start-line="123" selection-start-column="33" selection-end-line="123" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1800,7 +1524,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="442" column="41" selection-start-line="442" selection-start-column="41" selection-end-line="442" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1808,91 +1531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="6972" column="74" selection-start-line="6972" selection-start-column="74" selection-end-line="6972" selection-end-column="74" />
-          <folding>
-            <marker date="1502345888000" expanded="true" signature="14003:14015" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="14056:14066" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="14098:14122" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="120988:120998" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="121166:121184" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="122504:122546" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="122653:122669" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="125112:125123" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="125471:125511" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="147361:147373" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="153277:153306" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="153581:153592" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="154585:154614" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="158899:158928" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="168458:168534" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="251420:251479" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="254897:254966" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="256244:256265" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="256820:256861" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="263576:263599" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="266241:266263" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="281232:281298" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="281412:281514" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="327547:327573" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="327995:328021" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="328446:328473" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="329039:329066" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="329544:329567" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="329947:329987" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="330117:330133" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="330337:330354" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="330921:330939" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="347434:347525" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="347644:347766" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="347968:348090" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="378317:378363" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="380724:380740" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="381103:381116" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="411599:411612" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="415159:415189" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="415274:415284" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="415331:415342" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="438978:438990" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="468028:468095" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="469157:469169" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="469373:469385" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="470688:470698" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="470878:470890" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="476206:476218" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="476336:476348" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="476465:476477" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="476662:476694" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="476772:476780" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="493299:493311" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="496995:497062" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="497201:497219" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="509137:509204" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="509358:509370" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="509464:509476" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="509571:509587" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="510150:510160" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="525282:525311" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="525430:525440" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="536587:536627" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="540741:540751" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="604859:604903" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="604944:604965" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="614516:614531" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="625097:625112" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="626486:626501" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="631775:631804" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="687134:687149" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="688184:688220" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="688691:688727" placeholder="..." />
-            <marker date="1502345888000" expanded="true" signature="711097:711130" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1900,14 +1538,438 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1368">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/com/fasterxml/jackson/core/jackson-annotations/2.7.4/jackson-annotations-2.7.4.jar!/com/fasterxml/jackson/annotation/JsonFormat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/org.activiti.explorer/JsonpCallbackFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/mybatis/generator/mybatis-generator-core/1.3.2/mybatis-generator-core-1.3.2-sources.jar!/org/mybatis/generator/api/CommentGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/resources/spring-datasource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/mybatis/generator/mybatis-generator-core/1.3.2/mybatis-generator-core-1.3.2-sources.jar!/org/mybatis/generator/config/xml/IbatorConfigurationParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-111">
+          <caret line="137" column="74" selection-start-line="137" selection-start-column="70" selection-end-line="137" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/mybatis/generator/mybatis-generator-core/1.3.2/mybatis-generator-core-1.3.2-sources.jar!/org/mybatis/generator/config/xml/ConfigurationParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="153" column="41" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-common/src/main/java/org/archer/common/utils/MybatisGeneratorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-common/src/main/java/org/archer/common/mybatis/generator/ArcherMyBatisGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-common/src/main/java/org/archer/common/mybatis/generator/ArcherCommentGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-diagram-rest/5.21.0/activiti-diagram-rest-5.21.0-sources.jar!/org/activiti/rest/diagram/services/ProcessInstanceHighlightsResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="65" column="136" selection-start-line="65" selection-start-column="121" selection-end-line="65" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessInstanceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/resources/stencilset.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5094">
+          <caret line="283" column="22" selection-start-line="283" selection-start-column="22" selection-end-line="283" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125442">
+          <caret line="6970" column="23" selection-start-line="6970" selection-start-column="17" selection-end-line="6970" selection-end-column="23" />
+          <folding>
+            <marker date="1502353541000" expanded="true" signature="14003:14015" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="14056:14066" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="14098:14122" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="120988:120998" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="121166:121184" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="122504:122546" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="122653:122669" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="125112:125123" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="125471:125511" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="147361:147373" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="153277:153306" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="153581:153592" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="154585:154614" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="158899:158928" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="168458:168534" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="251420:251479" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="254897:254966" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="256244:256265" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="256820:256861" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="263576:263599" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="266241:266263" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="281232:281298" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="281412:281514" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="327547:327573" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="327995:328021" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="328446:328473" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="329039:329066" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="329544:329567" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="329947:329987" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="330117:330133" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="330318:330335" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="330960:330978" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="347473:347564" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="347683:347805" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="348007:348129" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="378356:378402" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="380763:380779" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="381142:381155" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="411638:411651" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="415198:415228" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="415313:415323" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="415370:415381" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="439017:439029" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="468067:468134" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="469196:469208" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="469412:469424" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="470727:470737" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="470917:470929" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="476245:476257" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="476375:476387" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="476504:476516" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="476701:476733" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="476811:476819" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="493338:493350" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="497034:497101" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="497240:497258" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="509176:509243" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="509397:509409" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="509503:509515" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="509610:509626" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="510189:510199" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="525321:525350" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="525469:525479" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="536626:536666" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="540780:540790" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="604898:604942" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="604983:605004" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="614555:614570" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="625136:625151" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="626525:626540" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="631814:631843" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="687173:687188" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="688223:688259" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="688730:688766" placeholder="..." />
+            <marker date="1502353541000" expanded="true" signature="711136:711169" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/workflow/data/menu.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/js/highlight.pack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/css/github.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-instance.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/common/common.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="62" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="62" />
+          <folding>
+            <marker date="1502347040000" expanded="true" signature="2141:2242" placeholder="..." />
+            <marker date="1502347040000" expanded="true" signature="2590:2693" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template-xml.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/BaseHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="285" column="47" selection-start-line="285" selection-start-column="37" selection-end-line="285" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/history/HistoricTaskInstance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/task/TaskInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#2528#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/TaskVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="99" column="38" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/utils/ConvertUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="89" column="76" selection-start-line="89" selection-start-column="76" selection-end-line="89" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/task/TaskInfoQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/HistoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/HistoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/context/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="47" column="37" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/persistence/entity/HistoricTaskInstanceEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="53" column="85" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="196" column="0" selection-start-line="196" selection-start-column="0" selection-end-line="199" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/HistoricTaskInstanceQueryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="144" column="34" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/impl/AbstractQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0-sources.jar!/org/activiti/engine/query/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/editor-app/libs/jquery_1.11.0/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="7461" column="4" selection-start-line="7461" selection-start-column="4" selection-end-line="7461" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="173" column="53" selection-start-line="173" selection-start-column="53" selection-end-line="173" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+        <state relative-caret-position="208">
+          <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/js/jquery1x.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="9507" column="4" selection-start-line="9507" selection-start-column="4" selection-end-line="9507" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-app/src/main/webapp/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/TaskInstanceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/activiti/activiti-engine/5.21.0/activiti-engine-5.21.0.jar!/org/activiti/db/mapping/entity/HistoricTaskInstance.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3132">
+          <caret line="343" column="32" selection-start-line="343" selection-start-column="26" selection-end-line="343" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../MavenRepository01/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8620">
+          <caret line="425" column="88" selection-start-line="425" selection-start-column="88" selection-end-line="425" selection-end-column="88" />
           <folding />
         </state>
       </provider>

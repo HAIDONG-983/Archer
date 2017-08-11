@@ -20,15 +20,15 @@
                                 <div class ="row">
                                     <div class="col-xs-3">
                                         <label>任务实例ID</label>
-                                        <input type="text" name="ProcessInstanceVo.processInstanceId"/>
+                                        <input type="text" name="id"/>
                                     </div>
                                     <div class="col-xs-3">
                                         <label>任务名称</label>
-                                        <input type="text" name="ProcessInstanceVo.processDefinitionName"/>
+                                        <input type="text" name="name"/>
                                     </div>
                                     <div class="col-xs-3">
                                         <label>接入系统名称</label>
-                                        <select name="category" data-url="sysImgRights_Category.action"></select>
+                                        <select name="category" data-url="CfgSysRegistry/getCfgSysRegistryEnum.action"></select>
                                     </div>
                                     <%--TO-DO 日期控件未解决--%>
                                     <%--<div class="col-xs-4"> --%>
@@ -53,14 +53,11 @@
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <button class="btn btn-sm btn-success" onclick='queryModel();'><i class="glyphicon glyphicon-search"></i>
+            <button class="btn btn-sm btn-success" onclick='queryTasks();'><i class="glyphicon glyphicon-search"></i>
                 查询
             </button>
-            <button class="btn btn-sm btn-success" onclick='traceProcess();'><i class="glyphicon  glyphicon-time"></i>
-                流程跟踪
-            </button>
         </div>
-    </div>            </button>
+    </div>
 
     <div class="row">
         <div class="col-xs-12">
@@ -78,11 +75,12 @@
             url:"queryTasks.action",
             height: 350,
             pager : pager_selector,
-            colNames:['任务实例id','任务实例名称',"流程实例Id","任务开始时间","任务结束时间",'操作'],
+            colNames:['任务实例id','任务实例名称',"流程实例Id","流程名称","任务开始时间","任务结束时间",'操作'],
             colModel:[
                 {name:'id'},
                 {name:'name'},
                 {name:'processInstanceId'},
+                {name:'processName'},
                 {name:'createTime'},
                 {name:'endTime'},
                 {name:'options',
@@ -100,24 +98,12 @@
                             class:"btn btn-sm btn-success",
                             icon:"glyphicon glyphicon-play-circle ",
                             callback:function (rowObject) {
-                                alert(JSON.stringify(rowObject));
+                                completeTask(rowObject);
                             }
                         }
                     ]}
 
-//                    formatter:function (cellvalue, options, rowObject) {
-//                        return "<button class='btn btn-sm btn-primary' onclick='traceProcess("+rowObject.processInstanceId+");'><i class='glyphicon glyphicon-play-circle '></i>查看流程变量</button>";
-//                    }
-//                    formatter:'actions',
-//                    formatoptions:{ custome:true,
-//                                    customeOptions:[
-//                                        {   icon:"glyphicon glyphicon-play-circle green",
-//                                            title:"启动流程",
-//                                            callback:function (rowid) {
-//                                                alert(JSON.stringify($(grid_selector).jqGrid("getRowData",rowid)));
-//                                            }
-//                                        }]
-//                    }
+
                 }
             ],
             loadComplete : function() {
@@ -145,29 +131,29 @@
                 null
         );
     });
-
-
-
-    //跟踪流程
-    function traceProcess(){
-        var rowId=$("#grid-table").jqGrid("getGridParam",'selrow');
-        var rowData = $("#grid-table").jqGrid('getRowData',rowId);
-        if (Object.getOwnPropertyNames(rowData).length ==0){layer.alert("请选择记录!"); return;}
-        var processDefinitionId = rowData.processDefinitionId;
-        var processInstanceID =  rowData.processInstanceId;
-        alert(processDefinitionId+" "+ processInstanceID);
-        layer.open({
-            type: 2,
-            title: '流程跟踪',
-            shadeClose: true,
-            shade: 0.8,
-            skin: 'layui-layer-rim', //加上边框
-            area: ['90%', '90%'],
-            //content: "traceProcess?processInstanceID="+window.processInstanceID //iframe的url
-            content:"diagram-viewer/index.html?processDefinitionId="+processDefinitionId+"&processInstanceId="+processInstanceID
-        });
+    function queryTasks() {
+        $("#grid-table").jqGrid('setGridParam',{  // 重新加载数据
+            url:'queryTasks.action',
+            postData:$("#frm").serializeForm()
+        }).trigger("reloadGrid");
+        return false;
     }
 
+
+
+    function completeTask(rowObject) {
+        $.ajax("completeTask.action",{
+            data:JSON.stringify(rowObject),
+            method:"POST",
+            contentType: "application/json; charset=utf-8",
+            success:function (data) {
+                layer.alert(data.message);
+                $("#grid-table").trigger("reloadGrid");
+            }
+        });
+    }
+    
+    
 </script>
 
 </body>
