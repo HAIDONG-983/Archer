@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc1e3b0-9a80-42e6-8df0-e412f092f611" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/css/github.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/highlight.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template-xml.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/jqGrid/jquery.jqGrid.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/main.js" afterPath="$PROJECT_DIR$/../archer-app/src/main/webapp/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/WfmsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/service/impl/WfmsServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/utils/ConvertUtil.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/utils/ConvertUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/TaskVo.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/vo/TaskVo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/ProcessTemplateHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/TaskInstanceHandler.java" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/java/com/ylink/wfms/web/TaskInstanceHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/resources/stencilset.json" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/resources/stencilset.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template.jsp" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/process-template.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp" afterPath="$PROJECT_DIR$/../archer-wfms/src/main/webapp/WEB-INF/workflow/pages/task-instance.jsp" />
     </list>
     <ignored path="archer-parent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -149,6 +135,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Excalibur1024" />
         <option value="于鲲鹏" />
       </list>
     </option>
@@ -1412,7 +1399,7 @@
       <workItem from="1502152723258" duration="687000" />
       <workItem from="1502240779323" duration="1321000" />
       <workItem from="1502277415601" duration="15377000" />
-      <workItem from="1502413120277" duration="7808000" />
+      <workItem from="1502413120277" duration="8013000" />
     </task>
     <task id="LOCAL-00001" summary="表格插件增加formatter类型为button的配置">
       <created>1502346937822</created>
@@ -1421,11 +1408,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502346937822</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="展示流程模型XML文件">
+      <created>1502430780462</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1502430780462</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331172000" />
+    <option name="totallyTimeSpent" value="331377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
