@@ -27,17 +27,14 @@
                                         <select name="category" data-url="CfgSysRegistry/getCfgSysRegistryEnum.action"></select>
                                     </div>
                                     <%--TO-DO 日期控件未解决--%>
-                                    <%--<div class="col-xs-4"> --%>
-                                        <%--&lt;%&ndash;<div class="input-group ">&ndash;%&gt;--%>
-                                        <%--<label>创建时间</label>--%>
-                                        <%--<input class="form-control date-picker" id="dateTimeRange" value="" type="text">--%>
-                                            <%--<span class="input-group-addon">--%>
-                                                <%--<i class="fa fa-calendar bigger-110"></i>--%>
-                                            <%--</span>--%>
-                                        <%--<input name="beginTime" id="beginTime" value="" type="hidden">--%>
-                                        <%--<input name="endTime" id="endTime" value="" type="hidden">--%>
-                                        <%--&lt;%&ndash;</div>&ndash;%&gt;--%>
-                                    <%--</div>--%>
+                                    <div class="col-xs-3">
+                                        <%--<div class="input-group ">--%>
+                                        <label>创建时间</label><span><i class="fa fa-calendar bigger-110"></i></span>
+                                        <input class="date-picker" value="" type="text">
+                                        <input name="beginTime" id="beginTime" value="" type="hidden">
+                                        <input name="endTime" id="endTime" value="" type="hidden">
+                                        <%--</div>--%>
+                                    </div>
                                 </div>
                             </form>
                             <div class="row">
@@ -263,14 +260,39 @@
     }
     //启动流程
     function startUp(templateId) {
-        //alert(templateId);
-        $.ajax("startupProcess.action",
-                {data: {"templateId":templateId},
-                    success:function (data) {
-                        alert("流程启动成功");
-                    }
+
+        $.ajax({
+            url:"isDeploy.action",
+            data:{modelId:templateId},
+            success:function (data) {
+                if (data.message==500){
+                    layer.alert("此流程未部署,无法启动.");
+                    return;
                 }
-        )
+                layer.open({
+                    type: 2,
+                    area: ['60%', '60%'],
+                    content: 'go_setUpVariable.action',
+                    success:function (layero, index) {
+                        var body = layer.getChildFrame('body',index);
+                        body.find("#templateid-input").val(templateId);
+                    }
+                });
+            }
+
+        });
+
+
+
+
+
+//        $.ajax("startupProcess.action",
+//                {data: {"templateId":templateId},
+//                    success:function (data) {
+//                        layer.alert("流程启动成功");
+//                    }
+//                }
+//        )
     }
 
     function showXML(){

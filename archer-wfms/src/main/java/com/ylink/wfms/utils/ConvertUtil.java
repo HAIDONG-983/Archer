@@ -57,18 +57,26 @@ public class ConvertUtil implements ApplicationContextAware{
     public static List<ProcessInstanceVo> convertToInstances(List<HistoricProcessInstance> processInstances){
         List<ProcessInstanceVo> processInstanceVoList = new ArrayList<ProcessInstanceVo>(10);
         for (HistoricProcessInstance historicProcessInstance: processInstances) {
-            ProcessInstanceVo processInstanceVo =new ProcessInstanceVo();
-            processInstanceVo.setProcessInstanceId(historicProcessInstance.getId());
-            processInstanceVo.setProcessDefinitionName(historicProcessInstance.getProcessDefinitionName());
-            processInstanceVo.setProcessDefinitionVersion(historicProcessInstance.getProcessDefinitionVersion());
-            processInstanceVo.setStartTime(historicProcessInstance.getStartTime());
-            processInstanceVo.setEndTime(historicProcessInstance.getEndTime());
-            processInstanceVo.setDescription(historicProcessInstance.getDescription());
-            processInstanceVo.setProcessDefinitionId(historicProcessInstance.getProcessDefinitionId());
+            ProcessInstanceVo processInstanceVo = convertToInstance(historicProcessInstance);
             processInstanceVoList.add(processInstanceVo);
         }
         return processInstanceVoList;
     }
+
+
+    public static ProcessInstanceVo convertToInstance(HistoricProcessInstance historicProcessInstance){
+        ProcessInstanceVo processInstanceVo =new ProcessInstanceVo();
+        processInstanceVo.setProcessInstanceId(historicProcessInstance.getId());
+        processInstanceVo.setProcessDefinitionName(historicProcessInstance.getProcessDefinitionName());
+        processInstanceVo.setProcessDefinitionVersion(historicProcessInstance.getProcessDefinitionVersion());
+        processInstanceVo.setStartTime(historicProcessInstance.getStartTime());
+        processInstanceVo.setEndTime(historicProcessInstance.getEndTime());
+        processInstanceVo.setDescription(historicProcessInstance.getDescription());
+        processInstanceVo.setProcessDefinitionId(historicProcessInstance.getProcessDefinitionId());
+        return processInstanceVo;
+    }
+
+
 
 
     public static List<TaskVo> converToTaskInstances(List<HistoricTaskInstance> taskInstances){
@@ -96,4 +104,9 @@ public class ConvertUtil implements ApplicationContextAware{
         return taskVos;
 
     }
+
+
+
+
+
 }

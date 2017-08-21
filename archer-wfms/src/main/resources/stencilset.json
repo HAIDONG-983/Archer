@@ -73,57 +73,7 @@
       "description" : "工作流目标命名空间.",
       "popular" : true
     } ]
-  }, {
-    "name" : "asynchronousdefinitionpackage",
-    "properties" : [ {
-      "id" : "asynchronousdefinition",
-      "type" : "Boolean",
-      "title" : "异步",
-      "value" : "false",
-      "description" : "定义为一个异步任务.",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "exclusivedefinitionpackage",
-    "properties" : [ {
-      "id" : "exclusivedefinition",
-      "type" : "Boolean",
-      "title" : "互斥任务",
-      "value" : "false",
-      "description" : "定义为一个互斥任务.",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "executionlistenerspackage",
-    "properties" : [ {
-      "id" : "executionlisteners",
-      "type" : "multiplecomplex",
-      "title" : "执行监听器",
-      "value" : "",
-      "description" : "Listeners for an activity, process, sequence flow, start and end event.",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "tasklistenerspackage",
-    "properties" : [ {
-      "id" : "tasklisteners",
-      "type" : "multiplecomplex",
-      "title" : "任务监听器",
-      "value" : "",
-      "description" : "监听用户任务.",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "eventlistenerspackage",
-    "properties" : [ {
-      "id" : "eventlisteners",
-      "type" : "multiplecomplex",
-      "title" : "事件监听器",
-      "value" : "",
-      "description" : "Listeners for any event happening in the Activiti Engine. It's also possible to rethrow the event as a signal, message or error event",
-      "popular" : true
-    } ]
-  }, {
+  },  {
     "name" : "usertaskassignmentpackage",
     "properties" : [ {
       "id" : "usertaskassignment",
@@ -133,32 +83,12 @@
       "description" : "分配任务给用户",
       "popular" : true
     } ]
-  },  {
-    "name" : "duedatedefinitionpackage",
-    "properties" : [ {
-      "id" : "duedatedefinition",
-      "type" : "String",
-      "title" : "到期时间",
-      "value" : "",
-      "description" : "用户任务到期时间.",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "prioritydefinitionpackage",
-    "properties" : [ {
-      "id" : "prioritydefinition",
-      "type" : "String",
-      "title" : "优先级",
-      "value" : "",
-      "description" : "用户任务的优先级.",
-      "popular" : true
-    } ]
   }, {
     "name" : "servicetaskclasspackage",
     "properties" : [ {
       "id" : "servicetaskclass",
       "type" : "String",
-      "title" : "类",
+      "title" : "自动任务完成类",
       "value" : "",
       "description" : "Class that implements the service task logic.",
       "popular" : true
@@ -564,7 +494,7 @@
       "type" : "String",
       "title" : "基数（多实例）",
       "value" : "",
-      "description" : "Define the cardinality of multi instance.",
+      "description" : "定义多实例的基数.",
       "popular" : true
     } ]
   }, {
@@ -616,26 +546,6 @@
       "title" : "Flow order",
       "value" : "",
       "description" : "Order outgoing sequence flows.",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "signaldefinitionspackage",
-    "properties" : [ {
-      "id" : "signaldefinitions",
-      "type" : "multiplecomplex",
-      "title" : "信号定义",
-      "value" : "",
-      "description" : "Signal definitions",
-      "popular" : true
-    } ]
-  }, {
-    "name" : "messagedefinitionspackage",
-    "properties" : [ {
-      "id" : "messagedefinitions",
-      "type" : "multiplecomplex",
-      "title" : "消息定义",
-      "value" : "",
-      "description" : "Message definitions",
       "popular" : true
     } ]
   }, {

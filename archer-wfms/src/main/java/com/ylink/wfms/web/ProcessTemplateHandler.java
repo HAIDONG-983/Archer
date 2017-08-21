@@ -67,8 +67,8 @@ public class ProcessTemplateHandler extends BaseHandler{
      */
     @RequestMapping("queryTemplate.action")
     @ResponseBody
-    public ActionResult queryTemplate(String modelName, String connectSystem, PageInfo pageInfo) {
-        List<TemplateVo> templateVoList = wfmsService.queryTemplate(modelName, connectSystem, pageInfo);
+    public ActionResult queryTemplate(String modelName, String connectSystem, String beginTime ,String endTime,PageInfo pageInfo) {
+        List<TemplateVo> templateVoList = wfmsService.queryTemplate(modelName, connectSystem,  beginTime ,endTime,pageInfo);
         Long count = wfmsService.queryTemplateCount(modelName, connectSystem);
         return new ActionResult<TemplateVo>(templateVoList, "success", count, pageInfo);
     }
@@ -127,7 +127,6 @@ public class ProcessTemplateHandler extends BaseHandler{
         model.setMetaInfo(JSON.toJSONString(o));
         wfmsService.saveModel(model);
         return "redirect:/modeler.html?modelId=" + modelId;
-        //return "xxx";
     }
 
     /**
@@ -204,8 +203,12 @@ public class ProcessTemplateHandler extends BaseHandler{
     }
 
 
-
-
+    /**
+     * 查看流程xml
+     * @param templateId
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("showXML.action")
     public ModelAndView showXML(String templateId) throws Exception {
         ModelAndView mav = new ModelAndView("workflow/pages/process-template-xml");
@@ -220,6 +223,23 @@ public class ProcessTemplateHandler extends BaseHandler{
         mav.addObject("xmlResource", replaceAll);
         return mav;
     }
+
+    @RequestMapping("go_setUpVariable.action")
+    public String go_setUpVariable(){
+        return "workflow/pages/process-variable";
+    }
+
+
+    @RequestMapping("isDeploy.action")
+    @ResponseBody
+    public ActionResult isDeploy(String modelId){
+        Model model = wfmsService.queryTemplateByModelId(modelId);
+        ActionResult result=new ActionResult();
+        if (model.getDeploymentId()==null)result.setMessage("500");
+        else result.setMessage("200");
+        return result;
+    }
+
 
 
 

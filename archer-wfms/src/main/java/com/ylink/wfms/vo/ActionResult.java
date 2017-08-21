@@ -15,6 +15,8 @@ public class ActionResult<T> {
     private String message;//响应信息
     private PageInfo pageInfo;
 
+    private T result;
+
     private HashMap<String,Object> model = new HashMap<String, Object>();
 
     public ActionResult(List<T> rows, String status, Long records, PageInfo pageInfo) {
@@ -38,6 +40,10 @@ public class ActionResult<T> {
     public ActionResult<T> put(String key,Object value){
         this.model.put(key,value);
         return this;
+    }
+
+    public ActionResult(T t){
+        this.result=t;
     }
 
     public ActionResult(String message, String status) {
@@ -100,6 +106,15 @@ public class ActionResult<T> {
 
     public void setModel(HashMap<String, Object> model) {
         this.model = model;
+    }
+
+
+    public T getResult() {
+        return result;
+    }
+
+    public void setResult(T result) {
+        this.result = result;
     }
 }
 

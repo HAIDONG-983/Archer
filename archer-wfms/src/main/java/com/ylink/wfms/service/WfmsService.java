@@ -19,7 +19,7 @@ public interface WfmsService<T> {
      *
      * @return
      */
-     List<TemplateVo> queryTemplate(String modelName, String connectSystem, PageInfo pageInfo);
+     List<TemplateVo> queryTemplate(String modelName, String connectSystem, String beginTime ,String endTime,PageInfo pageInfo);
 
     /**
      * 根据流程模板id查询模型
@@ -84,11 +84,18 @@ public interface WfmsService<T> {
     void startupProcess(String modelId, Map variables) throws Exception;
 
     /**
-     * 查询流程实例
+     * 查询流程实例列表
      * @param processInstanceVo
      * @return
      */
     List<ProcessInstanceVo> queryInstances(ProcessInstanceVo processInstanceVo);
+
+    /**
+     * 查询流程实例
+     * @param processInstanceVo
+     * @return
+     */
+    ProcessInstanceVo queryInstance(ProcessInstanceVo processInstanceVo);
 
     /**
      * 查询流程实例数量

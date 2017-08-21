@@ -3,11 +3,12 @@ package com.ylink.wfms.web;
 import com.ylink.wfms.vo.ActionResult;
 import com.ylink.wfms.vo.ProcessInstanceVo;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
+
+import static oracle.net.aso.C11.w;
 
 /**
  * Created by yukunpeng on 2017/7/31.
@@ -21,10 +22,10 @@ public class ProcessInstanceHandler extends BaseHandler {
     }
 
 
-    @RequestMapping("startupProcess.action")
+    @RequestMapping(value="startupProcess.action", method= RequestMethod.POST)
     @ResponseBody
-    public ActionResult startupProcess(@RequestParam("templateId") String modelId) throws Exception {
-        wfmsService.startupProcess(modelId,null);
+    public ActionResult startupProcess(@RequestBody Map<String,Object> data) throws Exception {
+        wfmsService.startupProcess((String) data.get("templateId"),(Map)data.get("variables"));
         return new ActionResult("流程启动成功","200");
     }
 
@@ -36,5 +37,11 @@ public class ProcessInstanceHandler extends BaseHandler {
     }
 
 
+    @RequestMapping("queryInstance.action")
+    @ResponseBody
+    public ActionResult<ProcessInstanceVo> queryInstance(ProcessInstanceVo processInstanceVo){
+        ProcessInstanceVo processInstanceVo1 = wfmsService.queryInstance(processInstanceVo);
+        return new ActionResult<ProcessInstanceVo>(processInstanceVo1);
+    }
 
 }

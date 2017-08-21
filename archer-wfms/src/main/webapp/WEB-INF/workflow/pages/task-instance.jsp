@@ -94,7 +94,7 @@
                                 alert(JSON.stringify(rowObject));
                             }
                         },
-                        {   text:"签收",
+                        {   text:"完成",
                             class:"btn btn-sm btn-success",
                             icon:"glyphicon glyphicon-play-circle ",
                             callback:function (rowObject) {

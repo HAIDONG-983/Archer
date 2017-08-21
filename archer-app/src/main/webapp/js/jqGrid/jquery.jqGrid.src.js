@@ -11786,7 +11786,7 @@ var xmlJsonClass = {
             p = $.extend(true, {
                 rowID: null,
                 initdata: {},
-                position: "first",
+                position: "last",
                 useDefValues: true,
                 useFormatter: false,
                 addRowParams: {extraparam: {}}

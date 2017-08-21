@@ -16,11 +16,10 @@ import org.activiti.editor.language.json.converter.BpmnJsonConverter;
 import org.activiti.engine.*;
 import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.history.HistoricTaskInstance;
+import org.activiti.engine.history.HistoricTaskInstanceQuery;
+import org.activiti.engine.impl.persistence.entity.ModelEntity;
 import org.activiti.engine.impl.util.io.InputStreamSource;
-import org.activiti.engine.repository.Deployment;
-import org.activiti.engine.repository.Model;
-import org.activiti.engine.repository.ModelQuery;
-import org.activiti.engine.repository.ProcessDefinition;
+import org.activiti.engine.repository.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -30,6 +29,7 @@ import java.util.List;
 import java.util.Map;
 
 import static com.ylink.wfms.utils.ConvertUtil.convertToTemplateVo;
+import static oracle.net.aso.C11.p;
 
 /**
  * Created by yukunpeng on 2017/7/15.
@@ -50,12 +50,27 @@ public class WfmsServiceImpl implements WfmsService {
     protected HistoryService historyService;
 
     @Autowired
+    protected ManagementService managementService;
+
+    @Autowired
     protected TaskService taskService;
 
-    public List<TemplateVo> queryTemplate(String modelName, String connectSystem, PageInfo pageInfo) {
-        List<Model> models = getModelQuery(modelName, connectSystem).listPage(pageInfo.getStart(), pageInfo.getLimit());
-        List<TemplateVo> templateVoList = ConvertUtil.convertToTemplateVo(models);
-        return templateVoList;
+    public List<TemplateVo> queryTemplate(String modelName, String connectSystem, String beginTime ,String endTime,PageInfo pageInfo) {
+        //List<Model> models = getModelQuery(modelName, connectSystem).listPage(pageInfo.getStart(), pageInfo.getLimit());
+        //List<TemplateVo> templateVoList = ConvertUtil.convertToTemplateVo(models);
+
+        String tableName = managementService.getTableName(ModelEntity.class);
+        NativeModelQuery nativeModelQuery = repositoryService.createNativeModelQuery();
+
+        String sql= "SELECT * FROM "+tableName+" T WHERE 1=1 " ;
+        if (StringUtils.isNotEmpty(modelName)) {sql+=" AND T.NAME_=#{modelName}  "; nativeModelQuery.parameter("modelName", modelName);}
+        if (StringUtils.isNotEmpty(connectSystem)){ sql+=" AND T.CATEGORY_=#{connectSystem} ";nativeModelQuery.parameter("connectSystem", connectSystem);};
+        if (StringUtils.isNotEmpty(beginTime)) {sql+=" AND to_char(T.CREATE_TIME_,'YYYY-MM-DD HH24:MI:SS')>=#{beginTime} ";nativeModelQuery.parameter("beginTime", beginTime);}
+        if (StringUtils.isNotEmpty(endTime)) {sql+=" AND to_char(T.CREATE_TIME_,'YYYY-MM-DD HH24:MI:SS')<=#{endTime} ";  nativeModelQuery.parameter("endTime", endTime);};
+        List<Model> models = nativeModelQuery.
+                sql(sql).
+                listPage(pageInfo.getStart(), pageInfo.getLimit());
+        return ConvertUtil.convertToTemplateVo(models);
 
     }
 
@@ -149,6 +164,7 @@ public class WfmsServiceImpl implements WfmsService {
         ModelQuery modelQuery = repositoryService.createModelQuery();
         if (StringUtils.isNotEmpty(modelName)) modelQuery.modelNameLike("%" + modelName + "%");
         if (StringUtils.isNotEmpty(connectSystem)) modelQuery.modelCategory(connectSystem);
+        //repositoryService.createNativeModelQuery().
         return modelQuery;
     }
 
@@ -162,7 +178,9 @@ public class WfmsServiceImpl implements WfmsService {
     }
 
     public List<ProcessInstanceVo> queryInstances(ProcessInstanceVo processInstanceVo) {
-        List<HistoricProcessInstance> historicProcessInstances = historyService.createHistoricProcessInstanceQuery().list();
+        List<HistoricProcessInstance> historicProcessInstances = historyService.
+                createHistoricProcessInstanceQuery().
+                listPage(processInstanceVo.getStart(),processInstanceVo.getLimit());
         return ConvertUtil.convertToInstances(historicProcessInstances);
     }
 
@@ -172,12 +190,10 @@ public class WfmsServiceImpl implements WfmsService {
 
 
     public List<TaskVo> queryTaskInstances(TaskVo taskVo) {
-        //taskService.createTaskQuery().
-        List<HistoricTaskInstance> list = historyService.createHistoricTaskInstanceQuery()
-                .taskId(taskVo.getId())
-                .taskNameLike(taskVo.getName())
-                .list();
-        //historyService
+        HistoricTaskInstanceQuery query = historyService.createHistoricTaskInstanceQuery();
+        query.taskId(taskVo.getId());
+        if (StringUtils.isNotEmpty(taskVo.getName()))query.taskNameLike("%"+taskVo.getName()+"%");
+        List<HistoricTaskInstance> list = query.listPage(taskVo.getStart(),taskVo.getLimit());
         return ConvertUtil.converToTaskInstances(list);
     }
 
@@ -186,7 +202,11 @@ public class WfmsServiceImpl implements WfmsService {
     }
 
 
+    public ProcessInstanceVo queryInstance(ProcessInstanceVo processInstanceVo) {
+        HistoricProcessInstance processInstance = historyService.createHistoricProcessInstanceQuery()
+                .processInstanceId(processInstanceVo.getProcessInstanceId()).singleResult();
+        return ConvertUtil.convertToInstance(processInstance);
 
-
+    }
 }
 
