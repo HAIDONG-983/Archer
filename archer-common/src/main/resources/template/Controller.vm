@@ -22,4 +22,52 @@ public class ${module}Controller{
     @Autowired
     private ${module}Service ${model}Service;
 
+    @RequestMapping("/goPage.action")
+    public String goPage(){
+        return "workflow/${model}/${module}";
+    }
+
+
+    @RequestMapping("/query.action")
+    @ResponseBody
+    public ActionResult query(${module} ${model}){
+        ${module}Example example =new ${module}Example();
+        ${module}Example.Criteria criteria = example.createCriteria();
+        List<SysRole> rows = ${model}Service.query(example, ${model}.getStart(), ${model}.getLimit());
+        Long count = ${model}Service.queryCount(example);
+        return new ActionResult<SysRole>(rows,"200",count,${model});
+    }
+
+
+    @RequestMapping("/add.action")
+    @ResponseBody
+    public ActionResult add(${module} ${model}){
+        ${model}.setLastModifyTime(new Date());
+        ${model}.setCreateTime(new Date());
+        ${model}.setDeleteMark(1L);
+        ${model}.setCreatorCode("0001");
+        ${model}.setCreatorName("archer");
+        ${model}Service.insert(${model});
+        return new ActionResult<${module}>("200","新增成功");
+    }
+
+    @RequestMapping("/update.action")
+    @ResponseBody
+    public ActionResult update(SysRole sysRole){
+        ${module}Example example =new ${module}Example();
+        ${module}Example.Criteria criteria = example.createCriteria();
+        criteria.andIdEqualTo(sysRole.getId());
+        List<${module}> result = ${model}Service.query(example);
+        if (result!=null && result.size()>0){
+            ${module} ${model}FromDB = result.get(0);
+            BeanUtil.copyPropertiesIgnoreNull(${model},${model}FromDB);
+            sysRoleService.update(${model}FromDB);
+            return new ActionResult("200","更新成功!");
+        }else{
+            return new ActionResult("500","更新失败");
+        }
+    }
+
+
+
 }

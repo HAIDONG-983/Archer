@@ -1,7 +1,7 @@
-package com.ylink.wfms.cfgSysRegistry.service;
+package com.ylink.wfms.sysmng.cfgSysRegistry.service;
 
-import com.ylink.wfms.cfgSysRegistry.entity.CfgSysRegistry;
-import com.ylink.wfms.cfgSysRegistry.entity.CfgSysRegistryExample;
+import com.ylink.wfms.sysmng.cfgSysRegistry.entity.CfgSysRegistry;
+import com.ylink.wfms.sysmng.cfgSysRegistry.entity.CfgSysRegistryExample;
 
 import org.archer.common.mybatis.service.BaseService;
 

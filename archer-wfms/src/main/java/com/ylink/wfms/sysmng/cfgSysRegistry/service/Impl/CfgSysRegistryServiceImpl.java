@@ -1,14 +1,13 @@
-package com.ylink.wfms.cfgSysRegistry.service.Impl;
+package com.ylink.wfms.sysmng.cfgSysRegistry.service.Impl;
 
-import com.ylink.wfms.cfgSysRegistry.service.CfgSysRegistryService;
-import com.ylink.wfms.cfgSysRegistry.entity.CfgSysRegistry;
-import com.ylink.wfms.cfgSysRegistry.entity.CfgSysRegistryExample;
+import com.ylink.wfms.sysmng.cfgSysRegistry.service.CfgSysRegistryService;
+import com.ylink.wfms.sysmng.cfgSysRegistry.entity.CfgSysRegistry;
+import com.ylink.wfms.sysmng.cfgSysRegistry.entity.CfgSysRegistryExample;
 
 import org.archer.common.mybatis.service.AbstractBaseService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -60,16 +60,22 @@
 			{
 				"name": "接入系统管理",
 				"url" :"sysOrg-goPage.do",
-				"level":3,
+				"level":2,
 				"icon":"menu-icon fa fa-flag  ",
 				"children":[]
 			},
 			{
 				"name": "平台系统管理",
-				"url" :"sysOrg-goPage.do",
-				"level":3,
+				"url" :"#",
+				"level":2,
 				"icon":"menu-icon fa fa-cog  ",
-				"children":[]
+				"children":[{
+					"name": "角色管理",
+					"url" :"SysRole/goPage.action",
+					"level":3,
+					"icon":"menu-icon fa fa-cog ",
+					"children":[]
+				}]
 			}
 		]
 	}

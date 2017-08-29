@@ -216,8 +216,7 @@ public class ArcherMyBatisGenerator  {
             File targetFile;
             String source;
             try {
-                File directory = shellCallback.getDirectory(gxf
-                        .getTargetProject(), gxf.getTargetPackage());
+                File directory = shellCallback.getDirectory(gxf.getTargetProject(), gxf.getTargetPackage());
                 targetFile = new File(directory, gxf.getFileName());
                 if (targetFile.exists()) {
                     if (gxf.isMergeable()) {
@@ -253,8 +252,7 @@ public class ArcherMyBatisGenerator  {
             File targetFile;
             String source;
             try {
-                File directory = shellCallback.getDirectory(gjf
-                        .getTargetProject(), gjf.getTargetPackage());
+                File directory = shellCallback.getDirectory(gjf.getTargetProject(), gjf.getTargetPackage());
                 targetFile = new File(directory, gjf.getFileName());
                 if (targetFile.exists()) {
                     if (shellCallback.isMergeSupported()) {
@@ -279,8 +277,7 @@ public class ArcherMyBatisGenerator  {
                 }
 
                 callback.checkCancel();
-                callback.startTask(getString(
-                        "Progress.15", targetFile.getName())); //$NON-NLS-1$
+                callback.startTask(getString("Progress.15", targetFile.getName())); //$NON-NLS-1$
                 writeFile(targetFile, source, gjf.getFileEncoding());
             } catch (ShellException e) {
                 warnings.add(e.getMessage());
@@ -289,6 +286,7 @@ public class ArcherMyBatisGenerator  {
         for (Context context : contextsToRun) {
             String servicePackage = context.getProperty("service_package");
             String controllerPackage = context.getProperty("controller_package");
+            String jspPath = context.getProperty("jsp_path");
             String serviceImplPackage=servicePackage+"."+"Impl";
             String module = context.getProperty("module_name");
             String author = context.getProperty("author_name");
@@ -332,6 +330,21 @@ public class ArcherMyBatisGenerator  {
                 velocityContext.put("servicePackage",servicePackage);
                 Resource controller_vm= new ClassPathResource("template"+File.separator+"Controller.vm");
                 VelocityUtil.generate(controller_vm.getFile().getPath(), targetFile.getPath(), velocityContext);
+
+                //生成JSP
+                //directory = shellCallback.getDirectory(targetProject, jspPath);
+//                File f =new File(jspPath);
+//                if (!f.exists()){
+//                    f.mkdirs();
+//                }
+//                targetFile = new File(jspPath, module+".jsp");
+//                velocityContext.put("package_name", controllerPackage);
+//                velocityContext.put("servicePackage",servicePackage);
+//                Resource jsp_vm= new ClassPathResource("template"+File.separator+"jsp.vm");
+//                VelocityUtil.generate(jsp_vm.getFile().getPath(), targetFile.getPath(), velocityContext);
+
+
+
             } catch (Exception e) {
                 e.printStackTrace();
             }

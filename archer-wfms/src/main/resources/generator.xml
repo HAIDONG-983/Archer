@@ -9,6 +9,7 @@
         <property name="module_name" value="${generator.module}"></property>
         <property name="author_name" value="${generator.author}"></property>
         <property name="controller_package" value="${generator.controller_package}"></property>
+        <property name="jsp_path" value="${generator.jsp_path}"></property>
 
         <!--分页插件-->
         <!--<plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin>-->
@@ -45,6 +46,7 @@
                             targetProject="${generator.targetProject}">
             <property name="enableSubPackages" value="false" />
             <property name="trimStrings" value="false" />
+            <property name="rootClass" value="com.ylink.wfms.vo.PageInfo"/>
         </javaModelGenerator>
 
         <!-- 生成的映射文件包名和位置 -->

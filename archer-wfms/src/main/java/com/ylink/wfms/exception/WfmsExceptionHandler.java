@@ -43,35 +43,6 @@ public class WfmsExceptionHandler implements HandlerExceptionResolver {
             mv.setViewName("common/error");
             return mv;
         }
-
-
-//        //Map<String, Object> model = new HashMap<String, Object>();
-//       // model.put("ex", ex);
-//
-//        /*  使用FastJson提供的FastJsonJsonView视图返回，不需要捕获异常   */
-//        FastJsonJsonView view = new FastJsonJsonView();
-//
-//        // 根据不同错误转向不同页面
-//        if(ex instanceof WfmsException) {
-//            attributes.put("code", ((WfmsException) ex).getCode());
-//            attributes.put("message", ex.getMessage());
-//            view.setAttributesMap(attributes);
-//            mv.setView(view);
-//            return mv;
-//        }else if(ex instanceof ParameterException) {
-//            return new ModelAndView("error-parameter", attributes);
-//        }else if (ex instanceof ActivitiException){//Activiti工作流引擎异常
-//            //attributes.put("code", ((ActivitiException) ex).getCode());
-//            attributes.put("message", ex.getMessage());
-//            attributes.put("status","ERROR");
-//            view.setAttributesMap(attributes);
-//            mv.setView(view);
-//            return mv;
-//        }
-//        else {
-//            //return mv;
-//            return new ModelAndView("common/error", attributes);
-//        }
     }
 
 

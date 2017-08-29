@@ -1,4 +1,4 @@
-package com.ylink.wfms.cfgSysRegistry.entity;
+package com.ylink.wfms.sysmng.cfgSysRegistry.entity;
 
 import java.util.Date;
 

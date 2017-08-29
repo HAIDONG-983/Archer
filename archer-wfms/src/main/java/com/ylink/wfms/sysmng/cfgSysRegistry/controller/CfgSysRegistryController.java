@@ -1,16 +1,14 @@
-package com.ylink.wfms.cfgSysRegistry.controller;
+package com.ylink.wfms.sysmng.cfgSysRegistry.controller;
 
-import com.ylink.wfms.cfgSysRegistry.entity.CfgSysRegistry;
-import com.ylink.wfms.cfgSysRegistry.entity.CfgSysRegistryExample;
-import com.ylink.wfms.cfgSysRegistry.service.CfgSysRegistryService;
-import com.ylink.wfms.vo.ActionResult;
+import com.ylink.wfms.sysmng.cfgSysRegistry.entity.CfgSysRegistry;
+import com.ylink.wfms.sysmng.cfgSysRegistry.entity.CfgSysRegistryExample;
+import com.ylink.wfms.sysmng.cfgSysRegistry.service.CfgSysRegistryService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.HashMap;

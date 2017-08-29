@@ -7,5 +7,16 @@ import java.util.List;
  */
 public interface BaseService<Entity,Example> {
 
-    public List<Entity> query(Example example);
+    List<Entity> query(Example example);
+
+    List<Entity> query(Example example,Integer start,Integer limit);
+
+    Long queryCount(Example example);
+
+    int insert(Entity entity);
+
+    void logicDelete(Entity entity,Example example);
+
+    void update(Entity entity);
+
 }
